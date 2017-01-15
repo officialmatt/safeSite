@@ -40,7 +40,7 @@ function hashPass($pass) {
 
 # query database to see if user typed the right password
 function is_correct_password($name, $pw) {
-	$db = new PDO("mysql:dbname=simpsons", "root", "");
+	$db = new PDO("mysql:dbname=us-cdbr-azure-southcentral-f.cloudapp.net", "b5c1623acc6c0f", "1e30475c");
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$rows = $db->query("SELECT pwd, salt, isAdmin FROM students WHERE name = '$name'");
 	foreach ($rows as $row) {
