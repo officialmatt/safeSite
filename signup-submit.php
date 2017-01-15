@@ -57,7 +57,7 @@ function hashPass($pass) {
 }
 
 function sign_up($name,$email, $pw, $id) {
-	$db = new PDO("mysql:dbname=simpsons", "root", "");
+	$db = new PDO("mysql:dbname=us-cdbr-azure-southcentral-f.cloudapp.net", "b5c1623acc6c0f", "1e30475c");
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	//$db->query("INSERT INTO students VALUES (777, $name, $email, $pw)");
 	$salt = mcrypt_create_iv(8);
