@@ -16,18 +16,24 @@ if (is_correct_password($name, $pw) == 2) {
 	session_start();
 
 	$_SESSION["name"] = $name;
+	print "here i am";
 	header("Location: grades.php");
+
 	die();
 }
 elseif (is_correct_password($name, $pw)== 1)
 {
 	session_start();
 	$_SESSION["name"] = $name;
+	print "no here i am";
+
 	header("Location: admin.php");
 	die();
 }
 else {
 	print "Incorrect Password!";
+	print "no no here i am";
+
 	header( "refresh:2;url=index.php" );
 }
 
