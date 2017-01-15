@@ -28,7 +28,7 @@ elseif (is_correct_password($name, $pw)== 1)
 }
 else {
 	print "Incorrect Password!";
-	header( "refresh:2;url=start.php" );
+	header( "refresh:2;url=index.php" );
 }
 
 function hashPass($pass) {

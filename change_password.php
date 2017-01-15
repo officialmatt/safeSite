@@ -21,7 +21,7 @@ if($recievedToken==$token){
 }
 else {
 	print "Tokens different, you have been hacked";
-	header( "refresh:1;url=start.php" );
+	header( "refresh:1;url=index.php" );
 }
 
 changePassword($oldPW, $newPW, $name);

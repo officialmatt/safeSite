@@ -5,7 +5,7 @@ $allowed = $_SESSION["allowed"];
 
 
 if ($allowed !== "Yes") {
-	header( "refresh:2;url=start.php" );
+	header( "refresh:2;url=index.php" );
 	die('You can not access this page without logging in!');
 
 }  ?>
@@ -30,7 +30,7 @@ if ($allowed !== "Yes") {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="start.php">Blog Post</a>
+          <a class="navbar-brand" href="index.php">Blog Post</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -129,7 +129,7 @@ if ($allowed !== "Yes") {
 
 
 										</dd>
-							
+
 									</dl>
 									<input type="submit" value="Sumbit" />
 								</fieldset>

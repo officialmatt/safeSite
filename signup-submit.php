@@ -26,7 +26,7 @@ else {
 
 
 
-header( "refresh:2;url=start.php" );
+header( "refresh:2;url=index.php" );
 
 function checkPassword($pw) {
 	if ( trim( $pw, 'a..z') != '' && trim( $pw, 'A..Z') != '' && strlen($pw) >= 8 )
